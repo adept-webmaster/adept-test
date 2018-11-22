@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/adept-test",
+  pathPrefix: '/adept-test',
   siteMetadata: {
     title: 'Adept Ecommerce and Fulfilment',
     menuLinks: [
