@@ -1,0 +1,21 @@
+.dropdown .dropdown-menu {
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0;
+  display: block;
+
+  transition: all 0.15s cubic-bezier(0.45, 0.05, 0.55, 0.9);
+  transform: translateY(-20px);
+
+  @include media-breakpoint-down(md) {
+    max-height: 0;
+  }
+}
+
+.dropdown.show .dropdown-menu {
+  transform: translateY(0);
+
+  pointer-events: auto;
+  max-height: 300px;
+  opacity: 1;
+}
